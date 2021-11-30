@@ -15,10 +15,11 @@ import Footer from 'components/Footer'
 import JsonSchema from 'components/JsonSchema'
 import { client } from 'graphql/client'
 import { LandingPageQueries } from 'graphql/queries/landing-page'
+import { LandingPageProps } from 'types/api'
 
-const Index = () => (
+const Index = ({ logo }: LandingPageProps) => (
   <>
-    <SectionHero />
+    <SectionHero logo={logo} />
     <SectionAboutProject />
     <SectionTech />
     <SectionConcepts />
